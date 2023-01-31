@@ -30,6 +30,19 @@ $drupal-menu-height: 30px;
 
 .crm-menubar-below-cms-menu #civicrm-usermenu-wrapper {
   position: fixed;
-  top: $drupal-menu-height;
   z-index: $zindex-navbar / 2;
 }
+
+.si-admin.crm-menubar-below-cms-menu #civicrm-usermenu-wrapper {
+  top: $drupal-menu-height;
+}
+
+/* The Drupal menu is 40px tall so we add that to our menubar height */
+body.page-civicrm.crm-menubar-visible.crm-menubar-below-cms-menu {
+    padding-top: 40px !important;
+}
+
+body.si-admin.page-civicrm.crm-menubar-visible.crm-menubar-below-cms-menu {
+    padding-top: 80px !important;
+}
+ 
