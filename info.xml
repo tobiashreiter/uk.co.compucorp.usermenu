@@ -24,4 +24,7 @@
   <civix>
     <namespace>CRM/Usermenu</namespace>
   </civix>
+  <mixins>
+    <mixin>smarty-v2@1.0.1</mixin>
+  </mixins>
 </extension>
